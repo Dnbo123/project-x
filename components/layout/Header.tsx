@@ -1,5 +1,5 @@
-import link from "next/link"
-import { search, User} from "lucid-react";
+import Link from "next/link"
+import { Search } from "lucide-react";
 
 const accomodationTypes = [
     "Rooms",
@@ -17,9 +17,9 @@ const Header: React.FC = () => {
                 {/* Top section */}  
            <div>
              {/* Logo */}
-             <link href="/" className="text-2xl font-bold text-primary">
+             <Link href="/" className="text-2xl font-bold text-primary">
              ListingApp
-             </link>
+             </Link>
 
              {/* Search bar */}
              <div className="hidden md:flex items-center space-x2 flex-1 max-w-md mx-8">
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                {/* Accommodation types */}
                <div className="overflow-x-auto pb-4">
                 <div className="flex space-x-6">
-                    {accomodationTypes.map((type) => (
+                    {accomodationTypes?.map((type) => (
                         <button 
                         key={type}
                         className="text-sm text-gray-600 hover:text-primary whitespace-nowrap"
@@ -61,5 +61,6 @@ const Header: React.FC = () => {
         </header>
     );
 };
+
 
 export default Header;

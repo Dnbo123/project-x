@@ -53,7 +53,6 @@ const PropertyCard: React.FC<{ property: typeof PROPERTYLISTINGSAMPLE[0] }> = ({
           <span className="text-sm">{property.offers.bed}</span>
         </div>
         <div className="flex items-center text-gray-600">
-          <Shower className="w-4 h-4 mr-1" />
           <span className="text-sm">{property.offers.shower}</span>
         </div>
         <div className="flex items-center text-gray-600">
